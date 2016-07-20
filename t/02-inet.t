@@ -1,7 +1,7 @@
 use v6;
 use Test;
 use lib 'lib';
-use Net::Util;
+use Net::Utils;
 
 plan 5;
 

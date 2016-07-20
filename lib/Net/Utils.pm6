@@ -1,6 +1,6 @@
 use v6;
 use NativeCall;
-unit module Net::Util;
+unit module Net::Utils;
 
 # http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/sys/sys/socket.h?rev=1.90&content-type=text/x-cvsweb-markup&only_with_tag=MAIN
 enum AF is export (AF_INET => 2, AF_INET6 => 24);
@@ -15,15 +15,15 @@ sub inet_ntop (int32, Buf, utf8, uint32 --> Str)    is native is export { * }
 
 =head1 NAME
 
-Net::Util - blah blah blah
+Net::Utils - blah blah blah
 
 =head1 SYNOPSIS
 
-  use Net::Util;
+  use Net::Utils;
 
 =head1 DESCRIPTION
 
-Net::Util is ...
+Net::Utils is ...
 
 =head1 AUTHOR
 

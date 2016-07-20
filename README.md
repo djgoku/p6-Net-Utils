@@ -1,17 +1,17 @@
 NAME
 ====
 
-Net::Util - blah blah blah
+Net::Utils - blah blah blah
 
 SYNOPSIS
 ========
 
-    use Net::Util;
+    use Net::Utils;
 
 DESCRIPTION
 ===========
 
-Net::Util is ...
+Net::Utils is ...
 
 AUTHOR
 ======

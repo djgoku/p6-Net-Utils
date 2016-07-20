@@ -1,6 +1,6 @@
 use v6;
 use Test;
-use Net::Util;
+use Net::Utils;
 
 pass "replace me";
 

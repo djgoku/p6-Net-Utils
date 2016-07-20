@@ -5,10 +5,10 @@
   "build-depends" : [ ],
   "depends" : [ ],
   "description" : "blah blah blah",
-  "name" : "Net::Util",
+  "name" : "Net::Utils",
   "perl" : "6.c",
   "provides" : {
-    "Net::Util" : "lib/Net/Util.pm6"
+    "Net::Utils" : "lib/Net/Utils.pm6"
   },
   "resources" : [ ],
   "source-url" : "",
