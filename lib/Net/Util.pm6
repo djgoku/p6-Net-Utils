@@ -1,6 +1,10 @@
 use v6;
-unit class Net::Util;
+use NativeCall;
+unit module Net::Util;
 
+enum AF is export (AF_INET => 2, AF_INET6 => 24);
+
+sub inet_pton (int32, Str, Buf is rw) returns int32 is native is export { * }
 
 =begin pod
 
