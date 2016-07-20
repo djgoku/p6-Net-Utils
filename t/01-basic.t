@@ -1,7 +1,6 @@
 use v6;
 use Test;
-use Net::Utils;
 
-pass "replace me";
+use-ok 'Net::Utils';
 
 done-testing;
