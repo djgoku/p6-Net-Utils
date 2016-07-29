@@ -11,6 +11,13 @@ sub inet_pton (int32, Str, Buf is rw) returns int32 is native is export { * }
 # http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/net/inet_ntop.c?rev=1.12&content-type=text/x-cvsweb-markup&only_with_tag=MAIN
 sub inet_ntop (int32, Buf, utf8, uint32 --> Str)    is native is export { * }
 
+my class in_addr is repr('CStruct') is export {
+  has uint32 $.s_addr;
+}
+
+sub inet_aton(Str, in_addr is rw) returns int32 is native is export { * }
+sub inet_ntoa(uint32) returns Str is native is export { * }
+
 =begin pod
 
 =head1 NAME

@@ -3,7 +3,7 @@ use Test;
 use lib 'lib';
 use Net::Utils;
 
-plan 5;
+plan 7;
 
 my $s_addr = Buf.allocate(4);
 
@@ -16,3 +16,8 @@ is inet_ntop(AF_INET, $s_addr, $ip, 16), '127.0.0.1', 'ip is 127.0.0.1';
 
 my $s_addr_invalid = Buf.new();
 is inet_ntop(AF_INET, $s_addr_invalid, utf8.allocate(16), 16), Str, 'ip is not 127.0.0.1';
+
+
+my in_addr $in_addr = in_addr.new;
+is inet_aton('127.0.0.1', $in_addr), 1, 'address was parse correctly';
+is inet_ntoa($in_addr.s_addr), '127.0.0.1', 'ip is 127.0.0.1';
